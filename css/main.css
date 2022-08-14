@@ -1,0 +1,348 @@
+@import url("../node_modules/normalize.css/normalize.css");
+@import url("../assets/fonts/stylesheet.css");
+body {
+  background-color: #000;
+  background-image: url(/assets/img/game_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.content__block {
+  background: #fff;
+  border-radius: 40px;
+  padding-bottom: 10px;
+}
+
+.custom-container {
+  margin: 0 30px;
+  width: auto;
+}
+
+.profile__info {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__info__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__info {
+  margin-left: 25px;
+}
+
+.user__login {
+  color: #dec27f;
+  font-weight: 300;
+}
+
+.user__balance {
+  color: #e2ce84;
+}
+
+.burger {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.game__background {
+  background: url(/assets/img/battleship.png), #fff;
+  height: 100vw;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 30px 30px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.name__of__game__block {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 18px;
+  margin-top: -120px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.name__of__game {
+  font-size: 27px;
+  padding: 36px 0 26px 20px;
+  background-color: #f9f9f9;
+  border-radius: 18px 18px 0 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.name__of__game__block .info__about__users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.name__of__game__block .title {
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.users-online,
+.prize-fund {
+  text-align: center;
+  padding: 20px 0 25px 0;
+}
+
+.tabs-block {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.tab-panel__button {
+  width: 50%;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 17px;
+  background-color: #fff;
+}
+
+.tab-panel__button.active {
+  background-color: #f2f2f2;
+  border-radius: 17px;
+  font-weight: 700;
+}
+
+.list-users {
+  margin-bottom: 20px;
+}
+
+.list-users .li-user {
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.list-users .see-more__button {
+  margin: 20px 0;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.li-user .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.li-user .username .number {
+  font-weight: 700;
+  font-size: 23px;
+  margin-right: 18px;
+}
+
+.accordion {
+  --bs-accordion-border-width: 0;
+  border-top: 1px solid #f1f1f1;
+  margin: 40px 0 20px 0;
+  padding: 30px 0 0 0;
+}
+
+.accordion-body {
+  padding: 20px 0;
+}
+
+.accordion-button-custom {
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+#accordion-button-star::before {
+  content: "";
+  position: relative;
+  float: left;
+  margin: 0px 10px 0 0;
+  width: 17px;
+  height: 17px;
+  background-image: url(../assets/img/star.svg);
+}
+
+.accordion-button::after {
+  width: 10px;
+  height: 10px;
+  background-image: url(../assets/img/plus.svg);
+  background-size: cover;
+}
+
+.accordion-button:not(.collapsed)::after {
+  width: 10px;
+  height: 10px;
+  background-image: url(../assets/img/minus.svg);
+  background-size: cover;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+footer a {
+  color: #e2ce84;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #dec27f;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.footer__column {
+  width: 50%;
+}
+
+.footer__column .title {
+  margin-bottom: 15px;
+}
+
+.footer__column .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 170px;
+}
+
+.footer__column .chat-telegram {
+  border: 1px solid #dec27f;
+  padding: 5px 15px 6px;
+  border-radius: 5px;
+}
+
+.footer__column .chat-telegram img {
+  margin-right: 8px;
+  width: 17px;
+  height: 17px;
+}
+
+.footer__security__pay {
+  font-size: 13px;
+  line-height: 18px;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  padding: 25px 0;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__security__pay::before {
+  content: "";
+  position: relative;
+  float: left;
+  margin: 0px 15px 0 0;
+  width: 17px;
+  height: 22px;
+  background-image: url(../assets/img/lock.svg);
+}
+
+.footer__links__offer {
+  padding: 10px 0;
+}
+
+.footer__links__offer a {
+  display: block;
+  margin-top: 15px;
+}
+
+.footer__copyright {
+  margin-top: 15px;
+  font-size: 13px;
+}
+/*# sourceMappingURL=main.css.map */
