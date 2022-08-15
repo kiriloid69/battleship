@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Пополнение - Партнеры</title>
+    </head>
+    <body>
+        <header>
+            <div class="custom-container">
+                <div class="menu">
+                    <div class="profile__info">
+                        <div class="profile__info__left">
+                            <div class="logo_block">
+                                <img src="../assets/img/logo.svg" alt="I.G.R.A." class="logo" />
+                            </div>
+                            <div class="user__info">
+                                <div class="user__login">my_name</div>
+                                <div class="user__balance">27 676 CWD</div>
+                            </div>
+                        </div>
+                        <div class="profile__info__right">
+                            <button class="burger">
+                                <img src="../assets/img/burger.svg" alt="меню" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content__block">
+            <div class="custom-container">
+                <div class="header-title">
+                    <h1>Пополнение — Через партнеров</h1>
+                    <a href="#"><img src="/assets/img/x.svg" alt="x" /></a>
+                </div>
+            </div>
+            <div class="method__replenishment">
+                <div class="cards-block">
+                    <div class="wrapper">
+                        <div class="def-card">
+                            <div class="icon-card"><img src="../assets/img/card.svg" alt="Card"></div>
+                            <div class="title-card">Банковская карта</div>
+                            <div class="description-card">Комиссия 2%</div>
+                        </div>
+                        <div class="def-card active">
+                            <div class="icon-card"><img src="../assets/img/User-clock.svg" alt="User" /></div>
+                            <div class="title-card">Через партнеров</div>
+                            <div class="description-card">Без комиссии</div>
+                        </div>
+                        <div class="def-card">
+                            <div class="icon-card">CWD</div>
+                            <div class="title-card">Со счета cwd.global</div>
+                            <div class="description-card">Без комиссии</div>
+                        </div>
+                        <div class="def-card">
+                            <div class="icon-card">CWD</div>
+                            <div class="title-card">Со счета cwd.global</div>
+                            <div class="description-card">Без комиссии</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-container">
+                    <div class="method__text">
+                        <h2 class="title">Возможные варианты покупки</h2>
+                        <p>
+                            Вы можете выбрать вариант обмена вашей валюты на внутреннюю валюту CWD. <br />
+                            <br />
+                            Этот способ пополнения без процентов. Сроки зачисления CWD на ваш баланс от 20 мин. до 2-х часов.
+                        </p>
+                        <div class="accordion accordion-small" id="accordionRating">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button
+                                        class="accordion-button accordion-button-custom collapsed"
+                                        id="accordion-button-info"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseOne"
+                                    >
+                                        Правила обмена
+                                    </button>
+                                </div>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">Правила обмена</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-pills" id="format-bill-tab" role="tablist">
+                            <li class="nav-item" id="usd" role="presentation">
+                                <button
+                                    class="nav-link active"
+                                    id="pills-usd-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#pills-usd"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-usd"
+                                    aria-selected="true"
+                                >
+                                    <div class="type__money">USDT</div>
+                                    <span class="percent">0,04 / 1</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" id="rub" role="presentation">
+                                <button class="nav-link" id="pills-rub-tab" data-bs-toggle="pill" data-bs-target="#pills-rub" type="button" role="tab" aria-controls="pills-rub" aria-selected="false">
+                                    <div class="type__money">RUB</div>
+                                    <span class="percent">0,75 / 1</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" id="btc" role="presentation">
+                                <button class="nav-link" id="pills-btc-tab" data-bs-toggle="pill" data-bs-target="#pills-btc" type="button" role="tab" aria-controls="pills-btc" aria-selected="false">
+                                    <div class="type__money">BTC</div>
+                                    <span class="percent">0,00001 / 1</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" id="thb" role="presentation">
+                                <button class="nav-link" id="pills-thb-tab" data-bs-toggle="pill" data-bs-target="#pills-thb" type="button" role="tab" aria-controls="pills-thb" aria-selected="false">
+                                    <div class="type__money">THB</div>
+                                    <span class="percent">0,02 / 1</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-usd" role="tabpanel" aria-labelledby="pills-usd-tab">
+                                <div class="format-sum__block">
+                                    <div class="format-bill">
+                                        <div class="title">Формат счёта?</div>
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item nav-item-five" id="ustrc20" role="presentation">
+                                                <button
+                                                    class="nav-link active"
+                                                    id="pills-trc20-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-trc20"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-trc20"
+                                                    aria-selected="true"
+                                                >
+                                                    <span class="percent">TRC20</span>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item nav-item-five" id="erc20" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-erc20-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-erc20"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-erc20"
+                                                    aria-selected="false"
+                                                >
+                                                    <span class="percent">ERC20</span>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item nav-item-five" id="omni" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-omni-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-omni"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-omni"
+                                                    aria-selected="false"
+                                                >
+                                                    <span class="percent">OMNI</span>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item nav-item-five" id="bep2" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-bep2-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-bep2"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-bep2"
+                                                    aria-selected="false"
+                                                >
+                                                    <span class="percent">BEP2</span>
+                                                </button>
+                                            </li>
+                                            <li class="nav-item nav-item-five" id="bep20" role="presentation">
+                                                <button
+                                                    class="nav-link"
+                                                    id="pills-bep20-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-bep20"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-bep20"
+                                                    aria-selected="false"
+                                                >
+                                                    <span class="percent">BEP20</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="purchase-amount-block">
+                                            <div class="title">
+                                                <div class="f-bold">Сумма покупки</div>
+                                                <div>Сумма в RUB</div>
+                                            </div>
+                                            <form action="action.php">
+                                                <div class="calculation">
+                                                    <input type="text" class="def-input" placeholder="Мин. 50 – Мак. 5000 CWD">
+                                                    <div class="f-bold" id="result">0</div>
+                                                </div>
+                                                <input class="def-button" type="submit" value="Купить CWD">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-rub" role="tabpanel" aria-labelledby="pills-rub-tab">rub</div>
+                            <div class="tab-pane fade" id="pills-btc" role="tabpanel" aria-labelledby="pills-btc-tab">btc</div>
+                            <div class="tab-pane fade" id="pills-thb" role="tabpanel" aria-labelledby="pills-thb-tab">thb</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__contacts">
+                <div class="footer__column">
+                    <div class="title">Поддержка</div>
+                    <div class="links">
+                        <a class="chat-telegram" href="#"> <img src="../assets/img/tg.svg" alt="Telegram" />Начать чат</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="title">Мы в соцсетях</div>
+                    <div class="links">
+                        <a href="instagram.com"><img src="../assets/img/Instagram.svg" alt="Instagram" /></a>
+                        <a href="fb.com"><img src="../assets/img/fb.svg" alt="Facebook" /></a>
+                        <a href="twitter.com"><img src="../assets/img/Twitter.svg" alt="Twitter" /></a>
+                        <a href="vk.com"><img src="../assets/img/Vk.svg" alt="Vk" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__security__pay">Мы гаратнируем безопасность всех способов оплаты и не сохраняем ваши данные</div>
+            <div class="footer__links__offer">
+                <a href="#">Правила программы лояльности</a>
+                <a href="#">Политика персональных данных</a>
+            </div>
+            <div class="footer__copyright">© 2021, АО I.G.Ra</div>
+        </footer>
+        <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
