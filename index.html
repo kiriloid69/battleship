@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="profile__info__right">
-                            <button class="burger">
+                            <button onclick="document.location='pages/menu.html'" class="burger">
                                 <img src="assets/img/burger.svg" alt="меню" />
                             </button>
                         </div>
@@ -50,13 +50,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="tabs-block">
-                    <div class="tab-panel__button active">Online</div>
-                    <div class="tab-panel__button">Создать</div>
+                <div class="tabs-block" id="pills-tab-two" role="tablist">
+                    <div class="tab-panel__button active" id="pills-online-tab" data-bs-toggle="pill" data-bs-target="#pills-online"role="tab" type="button" aria-controls="pills-online" aria-selected="true">Online</div>
+                    <div class="tab-panel__button" id="pills-create-tab" data-bs-toggle="pill" data-bs-target="#pills-create"role="tab" type="button" aria-controls="pills-create" aria-selected="false">Создать</div>
                 </div>
                 
-                <div class="tabs-content">
-                    <div class="list-users">
+                <div class="tab-content" id="pills-tab-twoContent">
+                    <div class="list-users tab-pane fade show active" id="pills-online" role="tabpanel" aria-labelledby="pills-online-tab" >
                         <div class="li-user">
                             <div class="username">Barabos</div>
                             <div class="count">25 CWD</div>
@@ -80,6 +80,33 @@
                         <div class="li-user">
                             <div class="username">Jackson</div>
                             <div class="count">200 CWD</div>
+                        </div>
+                        <div class="li-user">
+                            <div class="username">Makarena</div>
+                            <div class="count">3000 CWD</div>
+                        </div>
+                        <div class="see-more__button">Показать ещё</div>
+                    </div>
+                    <div class="list-users tab-pane fade" id="pills-create" role="tabpanel" aria-labelledby="pills-create-tab">
+                        <div class="li-user">
+                            <div class="username">Adam</div>
+                            <div class="count">230 CWD</div>
+                        </div>
+                        <div class="li-user">
+                            <div class="username">Vlad</div>
+                            <div class="count">190 CWD</div>
+                        </div>
+                        <div class="li-user">
+                            <div class="username">MalviNa</div>
+                            <div class="count">75 CWD</div>
+                        </div>
+                        <div class="li-user">
+                            <div class="username">Kapitan</div>
+                            <div class="count">50 CWD</div>
+                        </div>
+                        <div class="li-user">
+                            <div class="username">Игрок 1712</div>
+                            <div class="count">500 CWD</div>
                         </div>
                         <div class="li-user">
                             <div class="username">Makarena</div>

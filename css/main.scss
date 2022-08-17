@@ -4,13 +4,13 @@ $gray: #f2f2f2;
 
 @import url("../node_modules/normalize.css/normalize.css");
 @import url("../assets/fonts/stylesheet.css");
+@import url("../assets/fonts/FiraSans/firasans.css");
 
 body {
     background-color: #000;
     background-image: url(/assets/img/game_bg.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Fira Sans", "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -21,10 +21,72 @@ h2 {
     font-size: 23px;
     line-height: 28px;
     padding-top: 15px;
+
+    & .right-data {
+        font-weight: 700;
+        font-size: 18px;
+        float: right;
+        & .light {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
 }
 
 .f-bold {
     font-weight: 700;
+}
+
+.menu-page {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+
+.menu-mobile {
+    padding: 30px 0;
+}
+
+.menu-block {
+    padding: 40px 0;
+}
+
+.menu-link-point {
+    padding: 15px 0;
+    list-style-type: none;
+
+    &::marker {
+        display: none;
+        color: #fff;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $dark-gold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+
+        & img {
+            margin-right: 18px;
+        }
+    }
+
+    &.logout-link {
+        padding: 35px 0;
+        margin: 30px 0;
+        border-top: 2px solid #4d4f52;
+        border-bottom: 2px solid #4d4f52;
+    }
+
+    &.lang-edit-point {
+        display: flex;
+
+        & .inactive {
+            cursor: default;
+            opacity: 0.5;
+        }
+    }
 }
 
 .content__block {
@@ -39,7 +101,7 @@ h2 {
 }
 
 .profile__info {
-    margin: 15px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -366,29 +428,28 @@ footer {
     overflow-x: auto;
     &::-webkit-scrollbar {
         width: 0;
-      }
+    }
 
     & .wrapper {
         width: 780px;
         overflow: scroll;
         vertical-align: top;
         top: 0;
-
-    
     }
 }
 
 .def-card {
-    width: 170px;
+    width: 160px;
     height: 150px;
     display: inline-block;
     cursor: pointer;
     padding: 25px 30px;
     color: #fff;
     border-radius: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
     background: url(../assets/img/card_bg.png), linear-gradient(225deg, #3b3b3b 0%, #050505 100%);
     background-size: cover;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.228549);
 
     &:first-child {
         margin-left: 30px;
@@ -396,6 +457,7 @@ footer {
 
     &.active {
         height: 180px;
+        transition: 0.2s;
     }
 }
 
@@ -435,6 +497,7 @@ footer {
     background: #ffffff;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 17px;
+    margin-bottom: 40px;
 }
 
 #format-bill-tab {
@@ -486,7 +549,7 @@ footer {
 }
 
 .format-sum__block {
-    padding: 20px 0 40px;
+    padding-bottom: 40px;
 }
 
 .def-input {
@@ -496,10 +559,15 @@ footer {
     border: none;
     font-size: 14px;
     line-height: 19px;
-    min-width: 60%;
+    min-width: 65%;
 
     &::placeholder {
         color: #7d7d7d;
+    }
+
+    &:focus {
+        // border: 1px solid $dark-gold;
+        outline: $dark-gold auto 1px;
     }
 }
 
@@ -518,7 +586,6 @@ footer {
 }
 
 .purchase-amount-block {
-    padding: 50px 0 0;
     & .title {
         display: flex;
         justify-content: space-between;
