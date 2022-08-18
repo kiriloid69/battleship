@@ -51,12 +51,34 @@
                     </div>
                 </div>
                 <div class="tabs-block" id="pills-tab-two" role="tablist">
-                    <div class="tab-panel__button active" id="pills-online-tab" data-bs-toggle="pill" data-bs-target="#pills-online"role="tab" type="button" aria-controls="pills-online" aria-selected="true">Online</div>
-                    <div class="tab-panel__button" id="pills-create-tab" data-bs-toggle="pill" data-bs-target="#pills-create"role="tab" type="button" aria-controls="pills-create" aria-selected="false">Создать</div>
+                    <div
+                        class="tab-panel__button active"
+                        id="pills-online-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-online"
+                        role="tab"
+                        type="button"
+                        aria-controls="pills-online"
+                        aria-selected="true"
+                    >
+                        Online
+                    </div>
+                    <div
+                        class="tab-panel__button"
+                        id="pills-create-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-create"
+                        role="tab"
+                        type="button"
+                        aria-controls="pills-create"
+                        aria-selected="false"
+                    >
+                        Создать
+                    </div>
                 </div>
-                
+
                 <div class="tab-content" id="pills-tab-twoContent">
-                    <div class="list-users tab-pane fade show active" id="pills-online" role="tabpanel" aria-labelledby="pills-online-tab" >
+                    <div class="list-users tab-pane fade show active" id="pills-online" role="tabpanel" aria-labelledby="pills-online-tab">
                         <div class="li-user">
                             <div class="username">Barabos</div>
                             <div class="count">25 CWD</div>
@@ -88,31 +110,76 @@
                         <div class="see-more__button">Показать ещё</div>
                     </div>
                     <div class="list-users tab-pane fade" id="pills-create" role="tabpanel" aria-labelledby="pills-create-tab">
-                        <div class="li-user">
-                            <div class="username">Adam</div>
-                            <div class="count">230 CWD</div>
+                        <div class="format-bill">
+                            <div class="title">Ваша ставка CWD</div>
+                            <ul class="nav nav-pills" id="pills-tab-val" role="tablist">
+                                <li class="nav-item nav-item-five" id="val25" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="pills-val25-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-val25"
+                                        role="tab"
+                                        aria-controls="pills-val25"
+                                        aria-selected="true"
+                                    >
+                                        <span class="percent">25</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item nav-item-five" id="val50" role="presentation">
+                                    <button class="nav-link" id="pills-val50-tab" data-bs-toggle="pill" data-bs-target="#pills-val50" role="tab" aria-controls="pills-val50" aria-selected="true">
+                                        <span class="percent">50</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item nav-item-five" id="val75" role="presentation">
+                                    <button class="nav-link" id="pills-val75-tab" data-bs-toggle="pill" data-bs-target="#pills-val75" role="tab" aria-controls="pills-val75" aria-selected="true">
+                                        <span class="percent">75</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item nav-item-five" id="val100" role="presentation">
+                                    <button class="nav-link" id="pills-val100-tab" data-bs-toggle="pill" data-bs-target="#pills-val100" role="tab" aria-controls="pills-val100" aria-selected="true">
+                                        <span class="percent">100</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item nav-item-five" id="val200" role="presentation">
+                                    <button class="nav-link" id="pills-val200-tab" data-bs-toggle="pill" data-bs-target="#pills-val200" role="tab" aria-controls="pills-val200" aria-selected="true">
+                                        <span class="percent">200</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="custom-bid-block">
+                                <div class="text">Задать ставку <br /> вручную</div>
+                                <input class="def-input circle-input" type="number" placeholder="Ваша ставка" />
+                            </div>
                         </div>
-                        <div class="li-user">
-                            <div class="username">Vlad</div>
-                            <div class="count">190 CWD</div>
+                        <div class="format-bill">
+                            <div class="title">Тип дуэли</div>
+                            <ul class="nav nav-pills" id="pills-tab-type-duel" role="tablist">
+                                <li class="nav-item nav-item-two" id="open-duel" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="pills-open-duel-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-open-duel"
+                                        role="tab"
+                                        aria-controls="pills-open-duel"
+                                        aria-selected="true"
+                                    >
+                                        <span class="percent">Открытая дуэль</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item nav-item-two" id="close-duel" role="presentation">
+                                    <button class="nav-link" id="pills-close-duel-tab" data-bs-toggle="pill" data-bs-target="#pills-close-duel" role="tab" aria-controls="pills-close-duel" aria-selected="true">
+                                        <span class="percent">Закрытая дуэль</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="custom-bid-block">
+                                <div class="text">Введите имя <br /> соперника</div>
+                                <input class="def-input circle-input" type="text" placeholder="nickname соперника" />
+                            </div>
                         </div>
-                        <div class="li-user">
-                            <div class="username">MalviNa</div>
-                            <div class="count">75 CWD</div>
-                        </div>
-                        <div class="li-user">
-                            <div class="username">Kapitan</div>
-                            <div class="count">50 CWD</div>
-                        </div>
-                        <div class="li-user">
-                            <div class="username">Игрок 1712</div>
-                            <div class="count">500 CWD</div>
-                        </div>
-                        <div class="li-user">
-                            <div class="username">Makarena</div>
-                            <div class="count">3000 CWD</div>
-                        </div>
-                        <div class="see-more__button">Показать ещё</div>
+                        <input class="def-button" type="submit" value="Создать игру" />
                     </div>
                 </div>
                 <div class="accordion" id="accordionRating">
@@ -194,7 +261,7 @@
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body">
-                                <p> Здесь будут правила и выигрыши</p>
+                                <p>Здесь будут правила и выигрыши</p>
                             </div>
                         </div>
                     </div>
@@ -212,23 +279,19 @@
                 <div class="footer__column">
                     <div class="title">Мы в соцсетях</div>
                     <div class="links">
-                        <a href="instagram.com"><img src="assets/img/Instagram.svg" alt="Instagram"></a>
-                        <a href="fb.com"><img src="assets/img/fb.svg" alt="Facebook"></a>
-                        <a href="twitter.com"><img src="assets/img/Twitter.svg" alt="Twitter"></a>
-                        <a href="vk.com"><img src="assets/img/Vk.svg" alt="Vk"></a>
+                        <a href="instagram.com"><img src="assets/img/Instagram.svg" alt="Instagram" /></a>
+                        <a href="fb.com"><img src="assets/img/fb.svg" alt="Facebook" /></a>
+                        <a href="twitter.com"><img src="assets/img/Twitter.svg" alt="Twitter" /></a>
+                        <a href="vk.com"><img src="assets/img/Vk.svg" alt="Vk" /></a>
                     </div>
                 </div>
             </div>
-            <div class="footer__security__pay">
-                Мы гаратнируем безопасность всех способов оплаты и не сохраняем ваши данные
-            </div>
+            <div class="footer__security__pay">Мы гаратнируем безопасность всех способов оплаты и не сохраняем ваши данные</div>
             <div class="footer__links__offer">
                 <a href="#">Правила программы лояльности</a>
                 <a href="#">Политика персональных данных</a>
             </div>
-            <div class="footer__copyright">
-                © 2021, АО I.G.Ra
-            </div>
+            <div class="footer__copyright">© 2021, АО I.G.Ra</div>
         </footer>
         <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

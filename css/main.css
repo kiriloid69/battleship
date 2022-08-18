@@ -246,7 +246,7 @@ h2 .right-data .light {
 }
 
 .nav-item-two {
-  width: 50%;
+  width: 50% !important;
 }
 
 .list-users {
@@ -634,6 +634,13 @@ footer a:hover {
   outline: #dec27f auto 1px;
 }
 
+.circle-input {
+  border-radius: 17px;
+  text-align: center;
+  padding: 20px 0;
+  width: 50%;
+}
+
 .def-button {
   background: #e9cd93;
   -webkit-box-shadow: 0px 4px 7px rgba(222, 200, 149, 0.696054);
@@ -672,5 +679,31 @@ footer a:hover {
 
 .calculation #result {
   font-size: 18px;
+}
+
+.custom-bid-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-bid-block .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+#pills-tab-val, #pills-tab-type-duel {
+  margin-bottom: 20px;
+}
+
+.custom-bid-block {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
