@@ -3,34 +3,81 @@
 @import url("../assets/fonts/FiraSans/firasans.css");
 body {
   background-color: #000;
-  background-image: url(/assets/img/game_bg.png);
+  background-image: url("../assets/img/game_bg.png");
   background-repeat: no-repeat;
-  font-family: "Fira Sans", "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Fira Sans" Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
-h2 {
-  font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+h1 {
+  font-family: "Fira Sans";
+  width: 80%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #000000;
+}
+
+h3 {
+  font-family: "Fira Sans";
+  line-height: 28px;
+  font-weight: 700;
   font-size: 23px;
   line-height: 28px;
   padding-top: 15px;
 }
 
-h2 .right-data {
+h3 .right-data {
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   float: right;
 }
 
-h2 .right-data .light {
+h3 .right-data .light {
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  margin-left: 6px;
+}
+
+h4 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  color: #000000;
 }
 
 .f-bold {
   font-weight: 700;
+}
+
+.title-left {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
 }
 
 .menu-page {
@@ -152,16 +199,8 @@ h2 .right-data .light {
           justify-content: space-between;
 }
 
-.header-title h1 {
-  width: 80%;
-  margin: 0;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 32px;
-}
-
 .game__background {
-  background: url(/assets/img/battleship.png);
+  background: url("../assets/img/battleship.png");
   height: 100vw;
   background-size: cover;
   border-radius: 40px;
@@ -175,6 +214,7 @@ h2 .right-data .light {
 }
 
 .name__of__game__block {
+  font-family: "Fira Sans";
   background-color: #fff;
   width: 100%;
   border-radius: 18px;
@@ -218,6 +258,7 @@ h2 .right-data .light {
 .prize-fund {
   text-align: center;
   padding: 20px 0 25px 0;
+  width: 27%;
 }
 
 .tabs-block {
@@ -237,12 +278,11 @@ h2 .right-data .light {
   text-align: center;
   border-radius: 17px;
   background-color: #fff;
+  font-weight: 700;
 }
 
 .tab-panel__button.active {
   background-color: #f2f2f2;
-  border-radius: 17px;
-  font-weight: 700;
 }
 
 .nav-item-two {
@@ -329,7 +369,7 @@ h2 .right-data .light {
   margin: 0px 10px 0 0;
   width: 17px;
   height: 17px;
-  background-image: url(../assets/img/star.svg);
+  background-image: url("../assets/img/star.svg");
 }
 
 #accordion-button-info::before {
@@ -339,20 +379,20 @@ h2 .right-data .light {
   margin: 0px 10px 0 0;
   width: 17px;
   height: 17px;
-  background-image: url(../assets/img/Info-rect.svg);
+  background-image: url("../assets/img/Info-rect.svg");
 }
 
 .accordion-button::after {
   width: 10px;
   height: 10px;
-  background-image: url(../assets/img/plus.svg);
+  background-image: url("../assets/img/plus.svg");
   background-size: cover;
 }
 
 .accordion-button:not(.collapsed)::after {
   width: 10px;
   height: 10px;
-  background-image: url(../assets/img/minus.svg);
+  background-image: url("../assets/img/minus.svg");
   background-size: cover;
 }
 
@@ -451,7 +491,7 @@ footer a:hover {
   margin: 0px 15px 0 0;
   width: 32px;
   height: 22px;
-  background-image: url(../assets/img/lock.svg);
+  background-image: url("../assets/img/lock.svg");
 }
 
 .footer__links__offer {
@@ -496,7 +536,7 @@ footer a:hover {
   color: #fff;
   border-radius: 15px;
   margin-left: 5px;
-  background: url(../assets/img/card_bg.png), linear-gradient(225deg, #3b3b3b 0%, #050505 100%);
+  background: url("../assets/img/card_bg.png"), linear-gradient(225deg, #3b3b3b 0%, #050505 100%);
   background-size: cover;
   -webkit-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.228549);
           box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.228549);
@@ -567,11 +607,11 @@ footer a:hover {
 }
 
 .nav-item.nav-item-five .nav-link {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .nav-item .nav-link {
-  padding: 18px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -582,10 +622,15 @@ footer a:hover {
 
 .nav-item .percent {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #464646;
+}
+
+.nav-item .percent.bold {
+  font-weight: 700;
+  color: #000;
 }
 
 .type__money {
@@ -611,7 +656,8 @@ footer a:hover {
   border: none;
   font-size: 14px;
   line-height: 19px;
-  min-width: 65%;
+  min-width: 225px;
+  max-width: 80%;
 }
 
 .def-input::-webkit-input-placeholder {
@@ -642,17 +688,18 @@ footer a:hover {
 }
 
 .def-button {
+  font-family: "Open Sans";
   background: #e9cd93;
   -webkit-box-shadow: 0px 4px 7px rgba(222, 200, 149, 0.696054);
           box-shadow: 0px 4px 7px rgba(222, 200, 149, 0.696054);
   border-radius: 10px;
   color: #000;
+  font-weight: 600;
+  font-size: 17px;
   text-align: center;
   border: none;
-  font-size: 17px;
-  font-weight: 500;
   width: 100%;
-  padding: 12px 0;
+  padding: 20px 0;
   margin-top: 30px;
 }
 
@@ -677,8 +724,13 @@ footer a:hover {
           align-items: center;
 }
 
-.calculation #result {
+#result {
+  font-family: "Fira Sans";
+  font-weight: 700;
   font-size: 18px;
+  line-height: 31px;
+  text-align: right;
+  letter-spacing: 0.5px;
 }
 
 .custom-bid-block {
@@ -699,7 +751,8 @@ footer a:hover {
   line-height: 19px;
 }
 
-#pills-tab-val, #pills-tab-type-duel {
+#pills-tab-val,
+#pills-tab-type-duel {
   margin-bottom: 20px;
 }
 

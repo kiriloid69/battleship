@@ -74,21 +74,21 @@
                 <div class="tab-content">
                     <div class="tab-pane fade custom-container show active" id="pills-credit-card" role="tabpanel" aria-labelledby="pills-credit-card-tab">
                         <div class="method__text">
-                            <h2 class="title">
+                            <h3 class="title">
                                 Курс обмена <span class="right-data">$12.76 <span class="light">/ 1 CWD</span></span>
-                            </h2>
+                            </h3>
                             <p>На ваш баланс будет зачислена сумма CWD с учетом высчета комиссии в размере 2%. Эта сумма взымается банком.</p>
                             <div class="format-sum__block">
                                 <div class="format-bill">
                                     <div class="purchase-amount-block">
                                         <div class="title">
-                                            <div class="f-bold">Сумма покупки</div>
-                                            <div>Сумма в USDT</div>
+                                            <div class="f-bold">Сумма пополнения</div>
+                                            <div>Сумма зачисления</div>
                                         </div>
                                         <form action="action.php">
                                             <div class="calculation">
                                                 <input type="number" min="50" max="5000" class="def-input" placeholder="Мин. 50 – Мак. 5000 CWD" />
-                                                <div class="f-bold" id="result">0</div>
+                                                <div class="f-bold" id="result">0 CWD</div>
                                             </div>
                                             <input class="def-button" type="submit" value="Купить CWD" />
                                         </form>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="tab-pane fade custom-container" id="pills-partners" role="tabpanel" aria-labelledby="pills-partners-tab">
                         <div class="method__text">
-                            <h2 class="title">Возможные варианты покупки</h2>
+                            <h3 class="title">Возможные варианты покупки</h3>
                             <p>
                                 Вы можете выбрать вариант обмена вашей валюты на внутреннюю валюту CWD. <br />
                                 <br />
@@ -154,7 +154,9 @@
                                 <div class="tab-pane fade show active" id="pills-usd" role="tabpanel" aria-labelledby="pills-usd-tab">
                                     <div class="format-sum__block">
                                         <div class="format-bill">
-                                            <div class="title">Формат счёта</div>
+                                            <div class="title">
+                                                <div>Формат счёта</div>
+                                            </div>
                                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                                 <li class="nav-item nav-item-five" id="ustrc20" role="presentation">
                                                     <button
