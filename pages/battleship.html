@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/battleship.css" />
+        <title>Морской бой</title>
+    </head>
+    <body>
+        <section class="game-block">
+            <div id="games-online-view">
+                <div class="custom-container">
+                    <h3>Морской бой</h3>
+                    <a href="#"><img src="../assets/img/x.svg" alt="X" class="close" /></a>
+                </div>
+            </div>
+            <div id="games-online-field">
+                <header class="balance">
+                    <div class="left-side">
+                        <h4>Ваш баланс</h4>
+                        <div class="user__balance text-black">27 676 CWD</div>
+                    </div>
+                    <div class="right-side"><div class="ballance-game">100 CWD</div></div>
+                </header>
+                <section class="playing-field">
+                    <div class="your-field">
+                        <div class="table m">
+                            <div id="1-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="2-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="3-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                </div>
+                            </div>
+                            <div id="4-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="5-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="6-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="7-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="8-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m k"></div></div>
+                                    <div class="inner"><div class="cell m k"></div></div>
+                                    <div class="inner"><div class="cell m k"></div></div>
+                                    <div class="inner"><div class="cell m k"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                            <div id="9-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                </div>
+                            </div>
+                            <div id="10-row-m" class="custom-row">
+                                <div class="size-ship m">
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m o"></div></div>
+                                    <div class="inner"><div class="cell m d"></div></div>
+                                    <div class="inner"><div class="cell m"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-table">
+                            <div class="title">Ваш ход</div>
+                            <div class="status-time"></div>
+                            <div class="title-life-ships">
+                                Осталось <br />
+                                ваших кораблей
+                            </div>
+                            <div class="status-life-ships">
+                                <div class="custom-row">
+                                    <div class="count">0</div>
+                                    <div class="size-ship">
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                    </div>
+                                </div>
+                                <div class="custom-row">
+                                    <div class="count">2</div>
+                                    <div class="size-ship">
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                    </div>
+                                </div>
+                                <div class="custom-row">
+                                    <div class="count">3</div>
+                                    <div class="size-ship">
+                                        <div class="inner"><div class="cell m"></div></div>
+                                        <div class="inner"><div class="cell m"></div></div>
+                                    </div>
+                                </div>
+                                <div class="custom-row">
+                                    <div class="count">4</div>
+                                    <div class="size-ship">
+                                        <div class="inner"><div class="cell m"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opponent-field table o">
+                            <div id="1-row-o" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell k"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="2-row-o" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell k"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="3-row-o" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="4-row-o" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="5-row-o" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="6-row-m" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="7-row-m" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="8-row-m" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="9-row-m" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                            <div id="10-row" class="custom-row">
+                                <div class="size-ship">
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell d"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell "></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                    <div class="inner"><div class="cell"></div></div>
+                                </div>
+                            </div>
+                       
+                    </div>
+                </section>
+            </div>
+        </section>
+        <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
