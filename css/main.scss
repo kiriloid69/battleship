@@ -10,7 +10,7 @@ body {
     background-color: #000;
     background-image: url("../assets/img/game_bg.png");
     background-repeat: no-repeat;
-    font-family: "Open Sans", "Fira Sans" Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Fira Sans", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -563,7 +563,7 @@ footer {
     .percent {
         font-weight: 400;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 19px;
         text-align: center;
         color: #464646;
 
@@ -599,7 +599,7 @@ footer {
     border: none;
     font-size: 14px;
     line-height: 19px;
-    min-width: 225px;
+    width: 225px;
     max-width: 80%;
 
     &::placeholder {
@@ -616,6 +616,9 @@ footer {
     text-align: center;
     padding: 20px 0;
     width: 50%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    width: 210px;
 }
 
 .def-button {
