@@ -777,7 +777,7 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-.balance {
+#games-online-field header {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +791,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-.balance .ballance-game::after {
+#games-online-field header .ballance-game::after {
   content: "";
   position: relative;
   float: right;
@@ -853,5 +853,45 @@ footer a:hover {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
+}
+
+.rival-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.rival-info img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+}
+
+.rival {
+  -webkit-box-align: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+}
+
+.rival .left-side {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.rival .right-side {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.rival .right-side h3 {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -691,29 +691,25 @@ footer {
     margin-bottom: 20px;
 }
 
-.balance {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.03);
+#games-online-field {
+    & header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.03);
 
-    & .left-side {
-    }
-
-    & .right-side {
-    }
-
-    .ballance-game {
-        &::after {
-            content: "";
-            position: relative;
-            float: right;
-            background: url("../assets/img/wallet-b.svg");
-            background-size: cover;
-            height: 20px;
-            width: 20px;
-            margin-left: 7px;
+        & .ballance-game {
+            &::after {
+                content: "";
+                position: relative;
+                float: right;
+                background: url("../assets/img/wallet-b.svg");
+                background-size: cover;
+                height: 20px;
+                width: 20px;
+                margin-left: 7px;
+            }
         }
     }
 }
@@ -728,7 +724,7 @@ footer {
     width: 100vw;
 
     &.win {
-        background: url('../assets/img/confetti.png') #fff;
+        background: url("../assets/img/confetti.png") #fff;
         background-position: top;
         background-repeat: no-repeat;
     }
@@ -768,4 +764,34 @@ footer {
         font-size: 14px;
         line-height: 19px;
     }
+}
+
+
+.rival-info {
+
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    & img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        border-radius: 40px;
+        background-color: $gray;
+    }
+}
+
+.rival {
+    align-items: baseline !important;
+    & .left-side {
+        flex: 7;
+    }
+
+    & .right-side {
+        flex: 3;
+        & h3 {
+            margin-top: 10px;
+        }
+    } 
+
 }

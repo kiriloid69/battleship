@@ -143,9 +143,13 @@ h4 {
   background-position: center;
 }
 
+.cell.m.d {
+  border-radius: 6px;
+}
+
 .cell.d {
   background: #ff5050;
-  border-radius: 6px;
+  border-radius: 13px;
 }
 
 .cell.o {

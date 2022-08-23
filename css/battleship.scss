@@ -134,11 +134,15 @@ h4 {
             background-repeat: no-repeat;
             background-position: center;
         }
+
+        &.d {
+            border-radius: 6px;
+        }
     }
 
     &.d {
         background: #ff5050;
-        border-radius: 6px;
+        border-radius: 13px;
     }
 
     &.o {
