@@ -296,6 +296,8 @@ h4 {
   padding: 25px 0;
   text-align: center;
   border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
   background-color: #fff;
   font-weight: 700;
 }
