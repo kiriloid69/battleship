@@ -20,7 +20,7 @@ button {
   color: #000;
 }
 
-input {
+input, textarea, select {
   -webkit-appearance: none;
 }
 
@@ -863,7 +863,7 @@ footer a:hover {
 
 .bottom-popup .close {
   float: right;
-  display: inline-block;
+  display: inline;
 }
 
 .bottom-popup p {
