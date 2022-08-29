@@ -131,8 +131,8 @@ h4 {
 }
 
 .cell {
-  width: 37px;
-  height: 37px;
+  width: 33px;
+  height: 33px;
   background: linear-gradient(225deg, #3b3b3b 0%, #050505 100%);
   border-radius: 5px;
   margin-right: 0;

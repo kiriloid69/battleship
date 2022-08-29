@@ -20,6 +20,10 @@ button {
   color: #000;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 .router {
   background-color: #fff;
   padding: 20px;
