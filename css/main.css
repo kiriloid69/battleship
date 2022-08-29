@@ -300,6 +300,7 @@ h4 {
   -moz-border-radius: 17px;
   background-color: #fff;
   font-weight: 700;
+  border: none;
 }
 
 .tab-panel__button.active {
