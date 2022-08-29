@@ -1,6 +1,12 @@
 @import url("../node_modules/normalize.css/normalize.css");
 @import url("../assets/fonts/stylesheet.css");
 @import url("../assets/fonts/FiraSans/firasans.css");
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus, textarea:focus, input:focus {
+    font-size: 16px;
+  }
+}
+
 html {
   background-color: #fff;
 }
